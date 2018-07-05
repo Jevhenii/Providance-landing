@@ -1,0 +1,44 @@
+<div id="mySidenav" class="sidenav">
+  <div class="sidenav-logo">
+    <img src="../../assets/images/logo-white.png" alt="">
+  </div>
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a href="#" class="sidenav-link">Tour</a>
+  <a href="#" class="sidenav-link">Features</a>
+  <a href="#" class="sidenav-link">Pricing</a>
+  <a href="#" class="sidenav-link">Help</a>
+  <a href="#" class="sidenav-link">Contacts</a>
+  <a href="#" class="sidenav-link" id="sidenav-shop__btn">
+    <span class="shop-btn__text">
+      <i class="fab fa-apple" data-fa-transform="shrink-8 right-6"></i>Get App
+    </span>
+  </a>
+</div>
+
+<header [class.stikey-top]="isActive">
+  <nav class="topnav">
+    <div class="topnav-centered">
+      <a href="#home" class="active"><img [src]="imgUrl"></a>
+    </div>
+    <a href="#">
+      <span (click)="openNav()">
+        <i class="burger"></i>
+        <i class="burger"></i>
+        <i class="burger"></i>
+      </span>
+    </a>
+    <a href="#" class="topnav-item hvr-underline-from-center">Tour</a>
+    <a href="#" class="topnav-item hvr-underline-from-center">Features</a>
+    <a href="#" class="topnav-item hvr-underline-from-center">Pricing</a>  
+    <div class="topnav-right">
+      <a href="#" class="topnav-item hvr-underline-from-center">Help</a>
+      <a href="#" class="topnav-item hvr-underline-from-center">Contacts</a>
+      <a href="#" class="topnav-item hvr-forward" id="shop-btn">
+        <span class="shop-btn__text">
+          <i class="fab fa-apple" data-fa-transform="shrink-8 right-6"></i>Get App
+        </span>
+      </a>
+    </div>  
+  </nav> 
+</header>
+

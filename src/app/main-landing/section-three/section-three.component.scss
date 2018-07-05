@@ -1,0 +1,47 @@
+@import "../../../assets/fonts/mixins"; 
+@import "../../../assets/fonts/media-mixin"; 
+.section-wrapper {
+    padding: 216px 0;
+    display: flex;
+        .section-text {
+            width: 50%;
+            padding: 0 50px 100px 167px;
+                .section__item-ico {
+                    margin-top: 1em;
+                }
+                h5 {
+                    font-family: Lato;
+                    color:  #26272d;
+                    font-size: 15px;
+                    font-weight: 700;                   
+                }
+                h3 {
+                    @include sub-heading-style;
+                }
+                p {
+                    margin:3em 0;
+                    @include paragraph-style;
+                }
+    
+        }
+
+        .section-map {
+            overflow: hidden;
+            width: 50%;
+                @include sm {
+                    width: 100%;
+                }
+        }
+}
+
+@media screen and (max-width: 1080px) {
+    .section-wrapper {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        .section-text {
+            width: 100%;
+            padding: 50px;
+        }
+    }
+}

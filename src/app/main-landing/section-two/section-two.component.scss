@@ -1,0 +1,127 @@
+@import '../../../assets/fonts/mixins'; 
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+        .grid-item__text {
+            padding: 124px 220px 220px 50px;
+        }
+        .grid-item {
+            .try-to-hack {
+                border-radius: 28px;
+                padding: 10px 10px;
+                border: 1px solid rgba(211, 209, 209, 0.5);
+                @include hover-fade;
+                &:hover, &:focus, &:active {
+                    background-color: #2098D1;
+                    color: white;
+                }
+                    i {
+                        margin-left: 50px;
+                    }
+            }
+            .learn-more {
+                border-radius: 28px;
+                padding: 10px 10px;
+                border: 1px solid rgba(211, 209, 209, 0.5);
+                margin-left: 20px;
+                @include hover-fade;
+                &:hover, &:focus, &:active {
+                    background-color: #2098D1;
+                    color: white;
+                }
+            }
+            p {
+                @include paragraph-style;
+                margin: 3em 0;
+            }
+            h3 {
+                @include sub-heading-style;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+}
+
+@media screen and (max-width: 1190px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        .grid-item__text {
+            padding: 50px 120px 120px 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .grid {
+        display: grid;
+        grid-template-columns: auto;
+        .grid-item__text {
+            .grid-item__buttons {
+                padding-left: 0;
+            }
+        }
+            .grid-item {
+                padding: 2em;
+            }
+            .grid-item__img {
+                padding: 2em;
+            }
+    }
+}
+@media screen and (max-width: 596px) {
+    .grid {
+        display: grid;
+        .grid-item {
+            .try-to-hack {
+                padding: 10px 10px;
+            }
+            .learn-more {
+                padding: 10px 10px;
+            }
+    
+        }
+        .grid-item__buttons {
+            padding-left: 0;
+        }
+            .grid-item__text {
+                .grid-item__button {
+                    padding-left: 0;
+                }
+            }
+            .grid-item__img {
+                padding: 3em;
+            }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .grid {
+        display: grid;
+            .grid-item__buttons {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .grid-item {
+                .try-to-hack {
+                    display: block;
+                    padding: 10px 10px;
+                    text-align: center;
+                    i {
+                        margin-left: 10px;
+                    }
+                }
+                .learn-more {
+                    display: block;
+                    padding: 10px 10px;
+                    margin-left: 0;
+                    text-align: center;
+                }
+        
+            }
+    
+    }
+}

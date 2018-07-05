@@ -1,0 +1,32 @@
+@import "../../../assets/fonts/mixins"; 
+.hero {
+    max-height: 1000px;
+    padding: 15em 2em 20em;
+    background: url('../../../assets/images/banner_background.jpg') no-repeat center;
+    overflow: hidden;
+      .hero__img {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+    .hero-wrapper {
+        text-align: center;
+            h1 {
+              @include heading-style; 
+            }
+            p {
+              @include paragraph-style;  
+            }
+            .watch-video {
+              border: 1px solid grey;
+              display: inline-block;
+              border-radius: 28px;
+              padding: 10px 30px 10px 30px;
+              margin-top: 2em;
+              color: black;
+                i {
+                  margin-right: 10px;
+                }
+            }
+    }
+}

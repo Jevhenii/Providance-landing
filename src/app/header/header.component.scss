@@ -1,0 +1,159 @@
+
+@import '../../../node_modules/hover.css/scss/hover';
+li {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+ * {
+    font-family: myFont;
+ }
+ header {
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    transition: all 0.5s linear;
+    position: fixed;
+ }
+ .stikey-top {
+     animation: yourAnimation 1.5s forwards 0s ease;
+     background-color:#FFFFFF;
+ }
+
+ @keyframes yourAnimation{
+    0%{
+        transform: rotate(0) translateY(-10%);
+        }
+    50%{
+        transform: rotate(0) translateY(0);
+        }
+    100%{
+        transform: rotate(0) translateY(0);
+        }
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+        #sidenav-shop__btn {
+            display: inline-block;
+            color: #ffffff;
+            background-color:  #267df4;
+            border-radius: 28px;
+            width: 140px;
+            margin-left: 15px;
+        } 
+        .sidenav-logo {
+            position: absolute;
+            top: 15px;
+            left: 30px
+        }
+        
+        .sidenav-link {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+            color: whitesmoke;
+        }
+}
+
+.sidenav .sidenav-link:hover {
+    color:#267df4; 
+}
+
+.burger {
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color: black;
+    margin: 2px 0;
+    cursor: pointer;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* Navigation styling */
+.topnav {
+    position: relative;
+    overflow: hidden;
+    padding: 1em 8em;
+        .topnav-item:hover {
+            color:#267df4; 
+        }
+        a {
+            float: left;
+            color: #160202;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        span {
+            display: block;
+            margin-top: 7px;
+        }
+  }
+  
+
+  .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .topnav-right {
+    float: right;
+        #shop-btn {
+            color: #ffffff;
+            background-color:  #267df4;
+            border-radius: 28px;
+            margin-top: 5px;
+            padding: 10px 20px 10px 20px;
+                .shop-btn__text {
+                   margin: 0;
+                   padding: 0;
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+        }
+  }
+
+  @media screen and (max-width: 996px) {
+    .topnav {
+        padding: 2em 5em;
+    }
+    .topnav-item {
+        display: none;
+    }
+  }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}

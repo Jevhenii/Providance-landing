@@ -1,0 +1,28 @@
+@import "../../../assets/fonts/mixins"; 
+.about {
+    .grid-container {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+            .grid-item {
+                padding: 127px 111px 167px 0;
+                    .about-paragraph {
+                        @include paragraph-style;
+                    }
+                    .about-heading {
+                        margin: 1em 0 2em 0;
+                    }
+            }
+    }
+}
+
+@media screen and (max-width: 996px) {
+    .about {
+        .grid-container {
+            display:grid;
+            grid-template-columns: auto;
+                .grid-item {
+                    padding: 50px 20px;
+                }
+        }
+    }
+}

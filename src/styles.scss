@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: myFont;
+    src: url('./assets/fonts/font-awesome/fonts/fontawesome-webfont.ttf')
+}
+
+$heading-color: #26272d;
+$paragraph-color: #8c8f94;
